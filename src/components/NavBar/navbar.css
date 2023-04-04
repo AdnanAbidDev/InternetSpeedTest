@@ -1,0 +1,34 @@
+.flex-parent-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 12px;
+}
+.nav-child2 {
+  display: flex;
+  justify-content: center;
+}
+.nav-child3 {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (max-width: 767px) {
+  .flex-parent-nav {
+    grid-template-columns: 1fr 1fr;
+    font-size: 16px;
+  }
+  .nav-child1 {
+    justify-content: start;
+  }
+  .nav-child2 {
+    justify-content: end;
+  }
+  .nav-child3 {
+    justify-content: start;
+  }
+  .nav-child4 {
+    display: flex;
+    justify-content: end;
+  }
+}

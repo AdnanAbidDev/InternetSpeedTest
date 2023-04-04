@@ -53,7 +53,7 @@ export default function Charts() {
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
     if (isMobile) {
-      setWidth(350);
+      setWidth(250);
       setHeight(150);
     } else {
       setWidth(1200);
@@ -64,7 +64,7 @@ export default function Charts() {
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
-  }, [window.innerWidth]);
+  }, []);
 
   return (
     <AreaChart

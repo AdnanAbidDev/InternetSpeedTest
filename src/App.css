@@ -21,7 +21,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin-top: 5px;
-    gap: 5px;
+    gap: 0px;
     padding: 0 0px;
   }
   .speedometer-wrapper-download {
@@ -100,6 +100,10 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .speedometer-wrapper-download {
+    position: relative;
+    top: 50px;
+  }
   @keyframes slide-in {
     0% {
       transform: translateX(0px) translateY(100px);
@@ -127,6 +131,10 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .speedometer-wrapper-ping {
+    position: relative;
+    right: 15px;
+  }
   @keyframes slide-in-reverse {
     0% {
       transform: translateX(-100px) translateY(-100px);
@@ -154,6 +162,10 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .speedometer-wrapper-upload {
+    position: relative;
+    left: 15px;
+  }
   @keyframes slide-in-up {
     0% {
       transform: translateX(100px) translateY(-100px);

@@ -32,7 +32,7 @@ const Speedometer = ({ ...props }) => {
       const angle = startAngle + i * angleIncrement;
       const x = centerX + radius * Math.cos(angle);
       const y = centerY + radius * Math.sin(angle);
-      context.fillText(i * 10, x - 10, y + 5);
+      context.fillText(i * 10, x - props.numberWidth, y + 5);
     }
     // Draw the inner circle with colored shadow
     context.beginPath();

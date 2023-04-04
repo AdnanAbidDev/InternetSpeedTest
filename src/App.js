@@ -17,6 +17,7 @@ function App() {
   const [needleLength, setNeedleLength] = useState(125);
   const [headingSpace, setHeadingSpace] = useState(165);
   const [unitSpace, setUnitSpace] = useState(165);
+  const [numberWidth, setNumberWidth] = useState(10);
   const handleButtonClick = () => {
     setShowSpeedometers(true);
     setShowChart(true);
@@ -26,17 +27,19 @@ function App() {
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
     if (window.innerWidth < 768) {
-      setSize(240);
+      setSize(220);
       setFontScale(1.5);
-      setNeedleLength(78);
-      setHeadingSpace(90);
-      setUnitSpace(110);
+      setNeedleLength(70);
+      setHeadingSpace(85);
+      setUnitSpace(105);
+      setNumberWidth(6);
     } else {
       setSize(420);
       setFontScale(1);
       setNeedleLength(125);
       setHeadingSpace(165);
       setUnitSpace(200);
+      setNumberWidth(10);
     }
   };
   // Add event listener for window resize
@@ -71,6 +74,7 @@ function App() {
               needleLength={needleLength}
               headingSpace={headingSpace}
               unitSpace={unitSpace}
+              numberWidth={numberWidth}
             />
           </div>
           <div className="speedometer-wrapper-upload">
@@ -85,6 +89,7 @@ function App() {
               needleLength={needleLength}
               headingSpace={headingSpace}
               unitSpace={unitSpace}
+              numberWidth={numberWidth}
             />
           </div>
           <div className="speedometer-wrapper-ping">
@@ -99,6 +104,7 @@ function App() {
               needleLength={needleLength}
               headingSpace={headingSpace}
               unitSpace={unitSpace}
+              numberWidth={numberWidth}
             />
           </div>
         </div>

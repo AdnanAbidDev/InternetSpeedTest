@@ -53,7 +53,7 @@ export default function Charts() {
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
     if (isMobile) {
-      setWidth(250);
+      setWidth(200);
       setHeight(150);
     } else {
       setWidth(1200);
